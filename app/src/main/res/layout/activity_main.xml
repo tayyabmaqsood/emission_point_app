@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.111" />
 
     <Button
-        android:id="@+id/githubRep"
+        android:id="@+id/learnButton"
         android:layout_width="135dp"
         android:layout_height="53dp"
         android:backgroundTint="@android:color/white"
@@ -42,6 +42,7 @@
         android:layout_height="53dp"
         android:layout_marginStart="24dp"
         android:backgroundTint="@android:color/white"
+        android:onClick="openSecondActivity"
         android:text="Proceed"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"

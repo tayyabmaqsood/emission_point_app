@@ -30,4 +30,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
+
+    public void openSecondActivity(View view) {
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(intent);
+    }
 }
