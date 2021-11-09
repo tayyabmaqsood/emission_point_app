@@ -26,6 +26,7 @@
         android:layout_width="135dp"
         android:layout_height="53dp"
         android:backgroundTint="@android:color/white"
+        android:onClick="openRepository"
         android:text="Repository"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"

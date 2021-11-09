@@ -2,6 +2,8 @@ package com.example.emissionpointapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -21,5 +23,11 @@ public class MainActivity extends AppCompatActivity {
         }
         else
             imageView.setVisibility(view.VISIBLE);
+    }
+
+    public void openRepository(View view) {
+        Uri uri = Uri.parse("https://github.com/tayyabmaqsood/emission_point_app"); // missing 'http://' will cause crashed
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
 }
