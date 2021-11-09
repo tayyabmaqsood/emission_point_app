@@ -15,7 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void learnAlphbets(View view) {
-        Intent intent = new Intent(MainActivity2.this,LearnActivity.class);
+        Intent intent = new Intent(MainActivity2.this, LearnActivity.class);
         startActivity(intent);
     }
 }
