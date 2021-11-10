@@ -29,6 +29,7 @@
         android:layout_height="53dp"
         android:layout_marginTop="20dp"
         android:backgroundTint="@color/white"
+        android:onClick="makharijActivity"
         android:text="Makharij"
         android:textColor="@color/black"
         android:textSize="20sp"

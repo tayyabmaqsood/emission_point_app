@@ -40,4 +40,9 @@ public class LearnActivity extends AppCompatActivity {
     public void finishActivity(View view) {
         finish();
     }
+
+    public void makharijActivity(View view) {
+        Intent intent = new Intent(this, MakharijActivity.class);
+        startActivity(intent);
+    }
 }
