@@ -16,16 +16,12 @@ public class LearnActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_learn);
-        char[] arabic_alpha = new char[]{'ا', 'ب', 'پ', 'ت', 'ث', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'ژ', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'و', 'ه', 'ی'};
+        char[] arabic_alpha = {'ا', 'ب', 'پ', 'ت', 'ث', 'ج', 'چ', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'ژ', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ک', 'گ', 'ل', 'م', 'ن', 'و', 'ه', 'ی'};
 
         GridLayout gridLayout = findViewById(R.id.gridLayout);
         Button btn = new Button(this);
         btn.setId(arabic_alpha[0]);
         btn.setText(arabic_alpha[0]);
-        btn.setHeight(100);
-        btn.setWidth(100);
-        gridLayout.setRowCount(3);
-        gridLayout.setColumnCount(5);
         gridLayout.addView(btn);
 
         //        for (int i = 0; i < arabic_alpha.length; i++) {
