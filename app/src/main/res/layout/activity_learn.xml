@@ -9,13 +9,15 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="417dp"
-        android:layout_height="173dp"
-        app:alignmentMode="alignMargins"
-        app:columnOrderPreserved="true"
+        android:layout_width="374dp"
+        android:layout_height="197dp"
+        android:layout_margin="10dp"
+        app:columnCount="9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="5">
+
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -23,38 +25,13 @@
         android:id="@+id/resultImage"
         android:layout_width="0dp"
         android:layout_height="381dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout"
-        app:srcCompat="@android:drawable/arrow_down_float" />
-
-    <Button
-        android:id="@+id/takeExam"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="68dp"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
-        android:text="Take Exam"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/destroyActivity"
-        android:layout_width="155dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="68dp"
-        android:backgroundTint="@color/white"
-        android:onClick="endActivity"
-        android:text="Back"
-        android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/mk123" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
