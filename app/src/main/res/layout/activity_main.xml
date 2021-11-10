@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
     android:background="@drawable/background"
-    >
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView4"
@@ -14,7 +13,8 @@
         android:layout_height="wrap_content"
         android:text="Muhammad Tayyab"
         android:textColor="#FFFFFF"
-        android:textSize="25sp"
+        android:textSize="35sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,6 +29,7 @@
         android:onClick="openRepository"
         android:text="Repository"
         android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.63"
@@ -45,6 +46,7 @@
         android:onClick="openSecondActivity"
         android:text="Proceed"
         android:textColor="@android:color/black"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -57,6 +59,7 @@
         android:layout_marginStart="4dp"
         android:layout_marginTop="172dp"
         android:backgroundTint="@color/white"
+        android:minHeight="48dp"
         android:onClick="hideImageView"
         android:text="Show/Hide"
         android:textColor="@color/white"
@@ -67,12 +70,15 @@
 
     <ImageView
         android:id="@+id/repoView"
-        android:layout_width="380dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="0dp"
+        android:layout_height="220dp"
+        android:layout_marginBottom="232dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.903"
         app:srcCompat="@drawable/repo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
