@@ -89,6 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:backgroundTint="@color/black"
+        android:onClick="finishActivity"
         android:text="Finish"
         android:textSize="18sp"
         app:cornerRadius="15dp"

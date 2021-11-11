@@ -84,4 +84,11 @@ public class ExamActivity extends AppCompatActivity {
 
         }
     }
+
+    public void finishActivity(android.view.View view) {
+        Intent intent = new Intent(this,finishActivity.class);
+        intent.putExtra("Correct",String.valueOf(correctAnswers));
+        intent.putExtra("Wrong",String.valueOf(wrongAnswers));
+        startActivity(intent);
+    }
 }
