@@ -48,7 +48,10 @@ public class ExamActivity extends AppCompatActivity {
                 wrongAnswers++;
         }
         if(questionDisplayed.size() == 5){
-
+            Intent intent = new Intent(this,finishActivity.class);
+            intent.putExtra("Correct",String.valueOf(correctAnswers));
+            intent.putExtra("Wrong",String.valueOf(wrongAnswers));
+            startActivity(intent);
         }
         else
             setQuestions(view);
