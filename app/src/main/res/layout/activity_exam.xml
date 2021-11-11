@@ -7,87 +7,93 @@
     tools:context=".ExamActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/questionView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginBottom="286dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="58dp"
         android:text="How can we define array?"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/nextButton"
+        app:layout_constraintBottom_toTopOf="@+id/multipleChoice"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <RadioGroup
         android:id="@+id/multipleChoice"
-        android:layout_width="wrap_content"
+        android:layout_width="332dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="187dp"
-        android:layout_marginBottom="38dp"
-        app:layout_constraintBottom_toTopOf="@+id/finishButton"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="39dp"
+        app:layout_constraintBottom_toTopOf="@+id/nextButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/questionView">
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
             android:text="RadioButton"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
             android:text="RadioButton"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
             android:text="RadioButton"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <RadioButton
             android:id="@+id/radioButton7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="left"
             android:text="RadioButton"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/nextButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
         android:backgroundTint="@color/black"
+        android:onClick="updateView"
         android:text="Next"
         android:textSize="18sp"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/finishButton"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/multipleChoice" />
 
     <Button
         android:id="@+id/finishButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="74dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="260dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
         android:backgroundTint="@color/black"
         android:text="Finish"
         android:textSize="18sp"
         app:cornerRadius="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/nextButton"
         app:layout_constraintEnd_toStartOf="@+id/nextButton"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/multipleChoice" />
+        app:layout_constraintTop_toTopOf="@+id/nextButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>

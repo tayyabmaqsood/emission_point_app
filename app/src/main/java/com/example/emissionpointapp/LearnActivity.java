@@ -45,4 +45,9 @@ public class LearnActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MakharijActivity.class);
         startActivity(intent);
     }
+
+    public void startExam(View view) {
+        Intent intent = new Intent(this,ExamActivity.class);
+        startActivity(intent);
+    }
 }
