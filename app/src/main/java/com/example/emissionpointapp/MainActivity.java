@@ -16,14 +16,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void hideImageView(View view) {
-        ImageView imageView = findViewById(R.id.repoView);
-        if (imageView.getVisibility() == view.VISIBLE) {
-            imageView.setVisibility(view.INVISIBLE);
-        }
-        else
-            imageView.setVisibility(view.VISIBLE);
-    }
 
     public void openRepository(View view) {
         Uri uri = Uri.parse("https://github.com/tayyabmaqsood/emission_point_app"); // missing 'http://' will cause crashed

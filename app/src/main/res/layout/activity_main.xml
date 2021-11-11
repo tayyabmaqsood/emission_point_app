@@ -52,22 +52,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.817" />
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="172dp"
-        android:backgroundTint="@color/white"
-        android:minHeight="48dp"
-        android:onClick="hideImageView"
-        android:text="Show/Hide"
-        android:textColor="@color/white"
-        android:textColorHighlight="#FFFFFF"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
         android:id="@+id/repoView"
         android:layout_width="0dp"

@@ -38,7 +38,8 @@ public class finishActivity extends AppCompatActivity {
         startActivity(shareIntent);
     }
 
-    public void quitActivity(View view){
-        
+    public void quitActivity(View view) {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }
