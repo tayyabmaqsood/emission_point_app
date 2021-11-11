@@ -48,7 +48,7 @@ public class ExamActivity extends AppCompatActivity {
                 wrongAnswers++;
         }
         if(questionDisplayed.size() == 5){
-            
+
         }
         else
             setQuestions(view);
