@@ -19,7 +19,7 @@ public class ExamActivity extends AppCompatActivity {
     RadioGroup radioGroup;
     TextView textView;
     RadioButton radioButton;
-    List<String> questionsList = Arrays.asList("What is Makharij of ع", "What is Mukharij of ق", "What is Makharij of ر", "What is Makharij of ب", "What os Makhrij ن");
+    List<String> questionsList = Arrays.asList("What is Makharij of ع", "What is Mukharij of ق", "What is Makharij of ر", "What is Makharij of ب", "What is Makhrij ن");
     List<String> answersList = Arrays.asList("Middle of Throat","Base of Tongue which is near Uvula touching the mouth roof", " Rounded tip of the tongue and some portion near it touching the base of the frontal 4 teeth","Inner part of the both lips touch each other","Rounded tip of the tongue touching the base of the frontal 6 teeth","None of these");
     public List<Integer> questionDisplayed = new ArrayList<Integer>(100);
     int correctAnswers = 0, wrongAnswers = 0;
@@ -39,7 +39,7 @@ public class ExamActivity extends AppCompatActivity {
         if (radioId == -1)
             wrongAnswers++;
         else {
-            RadioButton radioButton = findViewById(radioId);
+            radioButton = findViewById(radioId);
             String chooseOption = radioButton.getText().toString();
             String question = textView.getText().toString();
             if (questionsList.indexOf(question) == answersList.indexOf(chooseOption))
@@ -47,14 +47,12 @@ public class ExamActivity extends AppCompatActivity {
              else
                 wrongAnswers++;
         }
-        if(questionDisplayed.size() == 5){
-            Intent intent = new Intent(this,finishActivity.class);
-            intent.putExtra("Correct",String.valueOf(correctAnswers));
-            intent.putExtra("Wrong",String.valueOf(wrongAnswers));
-            startActivity(intent);
-        }
+
+        if(questionDisplayed.size() == 5)
+            finishActivity(View);
         else
             setQuestions(view);
+
     }
 
     public void setQuestions(View view){
@@ -63,6 +61,8 @@ public class ExamActivity extends AppCompatActivity {
         textView = findViewById(R.id.questionView);
         int questionIndex = new Random().nextInt(questionsList.size());
 
+        while(questionDisplayed.contains(questionIndex))
+            questionIndex = new Random().nextInt(questionsList.size());
 
         if (questionDisplayed.contains(questionIndex) == false) {
 
@@ -81,7 +81,7 @@ public class ExamActivity extends AppCompatActivity {
             }
             if (!optionsDisplayed.contains(questionIndex))
                 ((RadioButton) radioGroup.getChildAt(new Random().nextInt(4))).setText(answersList.get(questionIndex));
-
+            radioGroup.clearCheck();
         }
     }
 
