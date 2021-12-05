@@ -3,12 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_enlarge_image.xml" value="0.5" />
         <entry key="app/src/main/res/layout/activity_exam.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_finish.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_learn.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_learn_by_alphabets.xml" value="0.16822916666666668" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21800947867298578" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.16822916666666668" />
         <entry key="app/src/main/res/layout/activity_makharij.xml" value="0.25" />
         <entry key="app/src/main/res/layout/cusomtoolbar.xml" value="0.25" />
