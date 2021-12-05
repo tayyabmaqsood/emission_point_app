@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
-
+    <include layout="@layout/cusomtoolbar"/>
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
