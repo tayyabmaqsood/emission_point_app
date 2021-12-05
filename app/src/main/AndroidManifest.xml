@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Emissionpointapp"
         >
+
         <activity
             android:name=".finishActivity"
             android:exported="false"
